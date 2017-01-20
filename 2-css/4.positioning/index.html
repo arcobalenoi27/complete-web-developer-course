@@ -1,0 +1,69 @@
+
+<!doctype html>
+<html>
+  <head>
+      <title>Webpage With Style</title>
+
+      <style type="text/css">
+          .red {
+            color: red;
+            font-size: 250%;
+          }
+          .large {
+            font-size: 200%;
+          }
+          #green {
+            color: green;
+          }
+          .underlined {
+            text-decoration: underline;
+          }
+          #first-section {
+            color: #4285F4;
+            background-color: #01DFA5;
+            width: 200px;
+            position: fixed;
+
+            /*
+            Relative positioning means we can move the element relative to where we otherwise be in the page.
+            Absolute positioning takes the element out of the flow of the page. And the.... relative to the left of the page.
+            Fixed position does the same thing, but it keep the element fixed, even when we scroll down the page.
+
+            */
+            /* The green box stay in position, that how fixed is different to absolute, absolute will move when the pages scroll, fixed will not.
+              So a typical example for fixed position is it might be if you want to have a menu on the top of your page, and you want
+              back to repeat, even as  you scroll down the page. Then you will use fixed position for that. */
+            /*The main point of absolutely positioning  is it takes  the element out of the flow of the page.
+              If you want something to position itself over the top of everything else, that's way to do it*/
+            /* The one with highest z-index will appear on the front*/
+
+          }
+          #second-section {
+            background-color: #5882FA;
+            width: 400px;
+            height: 5000px;
+
+          }
+
+          .clear-float {
+            clear: both;
+          }
+      </style>
+
+  </head>
+
+  <body>
+      <div id="first-section">
+        <p >The quick brown fox jumped over the lazy dog.</p>
+        <p >Wow, I love internal CSS !</p>
+      </div>
+
+      <div id="second-section">
+          <p id="green">This is some more text. <span class="underlined">And this text is underlined.<span></p>
+          <h1 class="red">CSS is cool !</h1>
+      </div>
+
+      <div class="clear-float"></div>
+      <p>This paragraph is not floated!</p>
+  </body>
+</html>

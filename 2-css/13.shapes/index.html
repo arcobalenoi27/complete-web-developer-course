@@ -1,0 +1,207 @@
+
+<!doctype html>
+<html>
+  <head>
+      <title>Webpage With Style</title>
+
+      <style type="text/css">
+          body {
+            font-family: cursive;
+            color: #FFF;
+          }
+          div {
+            position: relative;
+            float: left;
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 25px;
+            /*center text in div*/
+            text-align: center;
+            vertical-align: middle;
+            line-height: 100px;
+            cursor: pointer;
+          }
+          div:hover {
+            opacity: .7;
+          }
+
+          div > span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+
+            /* span tag置中 center span tag in div
+            文字方框的左上角，在div的中心點，所以要移動一半的長方形距離
+              The translateX() CSS function moves the element horizontally on the plane.
+              The translateY() CSS function moves the element vertically on the plane.
+              So we move half of the length of square.*/
+          }
+
+
+          .blue {
+            background-color: #58D3F7;
+          }
+          .square {
+            height: 100px;
+            width: 100px;
+
+          }
+          .rectangle {
+            height: 100px;
+            width: 150px;
+          }
+          .circle {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+          }
+          .pink {
+            background-color: #F5A9E1;
+          }
+          .oval {
+            height: 100px;
+            width: 150px;
+            border-radius: 50%;
+          }
+          .sup-half-circle {
+            height: 50px;
+            border-radius: 100px 100px 0 0;
+          }
+          .black {
+            color: #000000;
+          }
+          .inf-half-circle {
+            height: 50px;
+            border-radius: 0 0 100px 100px;
+          }
+          .left-half-circle {
+            width: 50px;
+            border-radius: 100px 0 0 100px;
+          }
+          .right-half-circle {
+              width: 50px;
+              border-radius: 0 100px 100px 0;
+          }
+          .green {
+            background-color: #9FF781;
+          }
+
+          .iso-triangle {
+            border-top: 50px solid transparent;
+            border-right:50px solid transparent;
+            border-bottom: 50px solid #9FF781;
+            border-left: 50px solid transparent;
+            display: inline-block;
+          }
+          .iso-t-location {
+            position: relative;
+            right: 120px;
+            top: 20px;
+          }
+          .rectangular-triangle {
+            border-top: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 50px solid #9FF781;
+            border-left: 50px solid #9FF781;
+          }
+          .clear {
+            clear: both;
+          }
+
+          .trapezoid {
+            border-top: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 50px solid #FAAC58;
+            border-left: 50px solid transparent;
+            width: 50px;
+          }
+          .relocate {
+            float: left;
+            position: relative;
+            right: 120px;
+            top:20px;
+          }
+          .regular-triangle {
+            border-top: 0px solid transparent;
+            border-right: 80px solid transparent;
+            border-bottom: 130px solid #9FF781;
+            border-left: 80px solid transparent;
+          }
+
+          .puzzle-x {
+            border-top: 50px solid #58D3F7;
+            border-right: 50px solid #FAAC58;
+            border-bottom: 50px solid #F5A9E1;
+            border-left: 50px solid #9FF781;
+          }
+          .puzzle-y {
+            border-top: 50px solid #58D3F7;
+            border-right: 50px solid #FF0009;
+            border-bottom: 50px solid #EFF00F;
+            border-left: 50px solid #900781;
+            width: 50px;
+          }
+          .puzzle-z {
+            border-top: 50px solid #58D3F7;
+            border-right: 50px solid #FAAC58;
+            border-bottom: 50px solid #EFF00F;
+            border-left: 50px solid #9FF781;
+            width: 50px;
+            height: 50px;
+            background-color: #AC58FA;
+          }
+          .puzzle-xy {
+            border-top:  50px solid #F5A9E1;
+            border-right: 50px solid #900781;
+            border-bottom: 50px solid #EFF00F;
+            border-left: 50px solid #FA8258;
+            width: 100px;
+            height: 150px;
+            background-color: #5882FA;
+          }
+
+      </style>
+
+  </head>
+
+  <body>
+      <div class="square blue" title="square">square</div>
+
+      <div class="rectangle blue" title="rectangle"><span>rectangle</span></div>
+
+      <div class="circle pink" title="circle">circle</div>
+
+      <div class="circle sup-half-circle pink" title="superior semicircle"><span class="black">superior semicircle</span></div>
+
+      <div class="circle inf-half-circle pink" title="inferior semicircle"><span class="black">inferior semicircle</span></div>
+
+      <div class="circle left-half-circle pink" title="left semicircle"><span class="black">left semicircle</span></div>
+
+      <div class="circle right-half-circle pink" title="right semicircle"><span class="black">right semicircle</span></div>
+
+      <div class="oval pink" title="oval">oval</div>
+
+        <div class="iso-triangle" title="isosceles triangle"></div>
+
+      <div class="clear"></div>
+
+      <div class="rectangular-triangle" title="rectangular triangle"></div>
+
+
+      <div class="regular-triangle" title="equilateral /regular triangle"></div>
+
+
+      <div class="trapezoid" title="trapezoid"></div>
+
+
+      <div class="puzzle-x" title="puzzle 1"></div>
+
+      <div class="puzzle-y" title="puzzle 2"></div>
+
+      <div class="puzzle-z" title="puzzle 3"></div>
+
+      <div class="puzzle-xy" title="puzzle 4"></div>
+
+  </body>
+</html>

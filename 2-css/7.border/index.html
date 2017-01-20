@@ -1,0 +1,59 @@
+
+<!doctype html>
+<html>
+  <head>
+      <title>Webpage With Style</title>
+
+      <style type="text/css">
+
+          /*  code practice- the start of my code. */
+          #square-red {
+            background-color: #FE2E2E;
+            width: 100px;
+            height: 100px;
+          }
+          #square-blue {
+            background-color: #2E9AFE;
+            width: 100px;
+            height: 100px;
+          }
+          #square-green {
+            background-color: #81F781;
+            width: 100px;
+            height: 100px;
+          }
+          /* But it's no so particular elegant. If I want to change the sizes of all three of these squares
+              as I want to do, then I have to update all of these.*/
+          .red {
+            background-color: #FE2E2E;
+            border: 10px yellow solid;
+          }
+          .blue {
+            background-color: #2E9AFE;
+            border-style: ridge solid dotted dashed;
+            border-color: green beige pink palegoldenrod;
+            border-width: 10px 5px 2px 1px;
+          }
+          .green {
+            background-color: #81F781;
+            border-radius: 50%;
+            /* So you can use border-radiuse to create circles out of square.*/
+          }
+          .square {
+            width: 100px;
+            height: 100px;
+            margin: 40px;
+            float: left;
+          }
+          /*keep the code easy to update and maintain*/
+      </style>
+
+  </head>
+
+  <body>
+      <div class="red square"></div>
+      <div class="blue square"></div>
+      <div class="green square"></div>
+
+  </body>
+</html>
