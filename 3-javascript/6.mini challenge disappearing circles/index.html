@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+      <title>Javascript</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+        <div class="circle red"></div>
+        <div class="circle blue"></div>
+        <div class="circle yellow"></div>
+        <script type="text/javascript">
+            document.getElementsByClassName('circle')[0].onclick = function() {
+                    document.getElementsByClassName('circle')[0].style.display = 'none';
+                }
+            document.getElementsByClassName('circle')[1].onclick = function() {
+                    document.getElementsByClassName('circle')[1].style.display = 'none';
+                }
+            document.getElementsByClassName('circle')[2].onclick = function() {
+                    document.getElementsByClassName('circle')[2].style.display = 'none';
+                }     
+        // Using the for loop to remove the same / similar code
+        //    for(let i=0; i<document.getElementsByClassName('circle').length;i++) {
+        //         document.getElementsByClassName('circle')[i].onclick = function() {
+        //             document.getElementsByClassName('circle')[i].style.display = 'none';
+        //         }
+        //    }
+
+        </script>
+  </body>
+</html>

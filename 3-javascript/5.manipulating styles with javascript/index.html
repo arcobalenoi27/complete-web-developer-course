@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+      <title>Javascript</title>
+
+  </head>
+  <body>
+        <p id="text">Hello, World!</p>
+        <button id="myButton">change text</button>
+        <p id="2ndParagraph">Javascript is ...</p>
+        <button id="2ndButton">append text</button>
+        <p id="emptyParagraph"></p>
+        <button id="createParagraph">create text</button>
+        <p id="mroeText">This is some text</p>
+        <button id="styleText">style text</button>
+        <script type="text/javascript">
+           document.getElementById('myButton').onclick = function() {
+                document.getElementById('text').innerHTML = 'Hello, Meme';
+           }
+           
+           document.getElementById('2ndButton').onclick = function() {
+                document.getElementById('2ndParagraph').innerHTML += 'awesome ';
+                // document.getElementById('2ndParagraph').innerHTML = document.getElementById('2ndParagraph').innerHTML  + 'awesome';
+           }
+
+           document.getElementById('createParagraph').onclick = function() {
+               document.getElementById('emptyParagraph').innerHTML = '<strong>Hi there!</strong>';
+           }
+
+            // Manipulating styles with javascript
+           document.getElementById('styleText').onclick = function() {
+               document.getElementById('mroeText').style.display = 'none';
+            //    manipulating the moreText paragraph font color 
+            //    document.getElementById('mroeText').style.color = 'red';
+            //    manipulating the moreText paragraph font size
+            //    document.getElementById('mroeText').style.fontSize = '50px';
+           }
+        </script>
+  </body>
+</html>
