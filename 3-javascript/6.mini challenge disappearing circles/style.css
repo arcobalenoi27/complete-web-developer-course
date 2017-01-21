@@ -1,0 +1,19 @@
+.circle {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 40px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #FA5858;
+}
+
+.blue {
+    background-color: #58ACFA;
+}
+
+.yellow {
+    background-color: #F2F5A9;
+}
