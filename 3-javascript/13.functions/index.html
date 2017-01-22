@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+      <title>Javascript</title>
+  </head>
+  <body>
+        <p>How many fingers are you holding up?</p>
+        <p><input type="number" id="myNumber" min="0" max="5" value="0"> <button id="guess">Guess!</button></p>
+        <script type="text/javascript">
+           function doAGuess(correctAnswer) {
+               var guess = Math.floor(Math.random() * 6);
+                   if(guess == correctAnswer) {
+                       return true;
+                   } else {
+                       return false;
+                   }
+           }
+           document.getElementById('guess').onclick = function() {
+               var myNumber = document.getElementById('myNumber').value;
+               var gotIt = false;
+               var numberOfGuesses = 1;
+               while(doAGuess(myNumber) === false) {
+                   var guess = Math.floor(Math.random() * 6);
+                   if(guess == myNumber) {
+                       gotIt = true;
+                       alert('Got it! It was a ' + myNumber + '. It took me ' + numberOfGuesses + ' guesses.');
+                   } else {
+                       numberOfGuesses++;
+                   }
+               }
+           }
+        </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+      <title>Javascript</title>
+  </head>
+  <body>
+        
+        <script type="text/javascript">
+            var myArray = new Array();
+            myArray[0] = "pizza";
+            myArray[1] = 'chocolate';
+            // console.log(myArray);
+            // console.log('length: ', myArray.length);
+
+            var tweets = ["Morning everybody!", "I love coffee!"];
+            tweets.push("Back to work!");
+            // add something into tweets array 
+            console.log(tweets);
+            //remove something from tweets array 
+            //array.prototype.splice(do something  from which index, delete how many elements, the elements you want to add to array...);
+            tweets.splice(1, 0, "cornflakes for breakfast", "Num num");
+            console.log("After splicing");
+            console.log(tweets);
+        </script>
+  </body>
+</html>
