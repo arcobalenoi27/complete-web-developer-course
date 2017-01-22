@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+      <title>Javascript</title>
+  </head>
+  <body>
+        <p>What is the magic word?</p>
+        <p><input type="text" name="" id="magicWord" placeholder="Enter some number..."></p>
+        <p><button id="checkMagicWord">Enter</button></p>
+        <script type="text/javascript">
+            document.getElementById('checkMagicWord').onclick = function() {
+                var magicWordEntered = document.getElementById('magicWord').value;
+                var magicWord = '12345';
+                // when you see a single equals in your program, it means that 
+                // you're setting the value of something to something else. when you
+                //  see a double equals means we're testing wheather or not, those two
+                //   things are the same. So it's logical different.
+                if(magicWordEntered == magicWord) {
+                    alert('You got it!');
+                } else {
+                    alert('Nope, try again!');
+                }
+            }
+        </script>
+  </body>
+</html>
