@@ -5,5 +5,5 @@
 
 ### Demo
 
-[Build a Landing Page](https://arcobalenoi27.github.io/complete-web-developer-course/5-Bootstrap4/8.project-app-landing page/) 
+[Build a Landing Page](https://arcobalenoi27.github.io/complete-web-developer-course/5-Bootstrap4/8.project-app-landing page) 
 
